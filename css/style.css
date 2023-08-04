@@ -12568,9 +12568,14 @@ body._lock-scroll {
     margin-right: calc(10px + 53 * ((100vw - 320px) / 840));
   }
 }
-@media (max-width: 1160px) {
+@media (max-width: 922px) {
   .header__logo {
-    width: calc(130px + 40 * ((100vw - 320px) / 840));
+    width: calc(130px + 40 * ((100vw - 320px) / 602));
+  }
+}
+@media (max-width: 992px) {
+  .header__logo img {
+    width: 100%;
   }
 }
 .header__logo._active {
@@ -12596,15 +12601,7 @@ body._lock-scroll {
   background: transparent !important;
 }
 .header .navbar .navbar-nav {
-  /* Если меньше контейнера */
-  -moz-column-gap: 31px;
-       column-gap: 31px;
-}
-@media (max-width: 1160px) {
-  .header .navbar .navbar-nav {
-    -moz-column-gap: calc(10px + 21 * ((100vw - 320px) / 840));
-         column-gap: calc(10px + 21 * ((100vw - 320px) / 840));
-  }
+  max-width: 456px;
 }
 .header .navbar .nav-link {
   color: #939393;
@@ -12650,6 +12647,7 @@ body._lock-scroll {
   }
 }
 .header__search {
+  position: relative;
   /* Если меньше контейнера */
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -12703,8 +12701,6 @@ body._lock-scroll {
   /* Если меньше контейнера */
   padding: 5px 8px;
   border: 1px solid #ccc;
-  /* Если меньше контейнера */
-  width: 275px;
 }
 @media (max-width: 1160px) {
   .header__search-input._active {
@@ -12714,11 +12710,6 @@ body._lock-scroll {
 @media (min-width: 1160px) {
   .header__search-input._active {
     padding: 5px 8px;
-  }
-}
-@media (max-width: 992px) {
-  .header__search-input._active {
-    width: calc(180px + 95 * ((100vw - 320px) / 672));
   }
 }
 @media (max-width: 502px) {
