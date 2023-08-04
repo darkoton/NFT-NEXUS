@@ -1,0 +1,30 @@
+.why{
+  @include adaptiv-value(padding-bottom, 150, 30, 1);
+
+  &__list{
+    .row{
+      @include adaptiv-value(gap, 25, 15, 1);
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__card{
+    width: 100%;
+    max-width: 360px;
+    @include adaptiv-value(padding-top, 43, 20, 1);
+    @include adaptiv-value(padding-bottom, 35, 20, 1);
+    @include adaptiv-value(row-gap, 27, 10, 1);
+    background-color: #5224B5;
+    color: #fff;
+    text-align: center;
+    @include adaptiv-font(24, 18);
+    font-weight: 400;
+    @include adaptiv-line-height(28.8, 21);
+
+    &-orange{
+      background-color: #FE8235;
+      color: #0A0A0A;
+    }
+  }
+}
