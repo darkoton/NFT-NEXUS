@@ -1,0 +1,32 @@
+.discover{
+
+  &__body{
+    @include adaptiv-value(padding-bottom, 80, 20, 1);
+  }
+  &__title{
+    width: 100%;
+    max-width: 721px;
+  }
+
+  &__main{
+    column-gap: 20px;
+    flex-wrap:wrap;
+  }
+  &__left{
+    max-width: 398px;
+    p{
+      @include adaptiv-line-height(50, 27);
+
+    }
+  }
+  &__right{
+    max-width: 620px;
+    p{
+      @include adaptiv-line-height(44.8, 25);
+    }
+  }
+  &__text{
+    color: #fff;
+    @include adaptiv-font(32, 20);
+  }
+}

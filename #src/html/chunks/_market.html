@@ -1,0 +1,783 @@
+<div class="market__search">
+  <div class="_container">
+    <div class="market__search-bg" onclick="search()"></div>
+    <div class="market__search-body">
+      <input type="text" placeholder="Search..." class="market__search-input">
+
+      <button class="market__search-submit icon-search btn-primary" onclick="search()"></button>
+    </div>
+  </div>
+</div>
+
+<section class='market'>
+  <div class='market__wrapper'>
+    <div class='market__container _container'>
+      <div class='market__body d-flex flex-column'>
+        <div class="market__top w-100 d-flex justify-content-between">
+          <ul class="market__nav d-flex">
+            <li class="market__option _active" data-tab-name="tab1">ALL</li>
+            <li class="market__option" data-tab-name="tab2">ART</li>
+            <li class="market__option" data-tab-name="tab3">GAME</li>
+            <li class="market__option" data-tab-name="tab4">PHOTOGRAPHY</li>
+            <li class="market__option" data-tab-name="tab5">ANIMAL</li>
+          </ul>
+
+          <div class="market__search-icon icon-search d-flex justify-content-center align-items-center"
+            onclick="search()"></div>
+        </div>
+
+        <div class="market__result _active tab1 d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 1.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Grenade</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-1.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 2.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Gun</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-2.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Leslie Alexander</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 3.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Sniper</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-3.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Arlene McCoy</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 4.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Arrow</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-4.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 5.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Spear</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-5.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Jane Cooper</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 6.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Bazooka</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-6.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Courtney Henry</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="market__result tab2 d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 3.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Sniper</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-3.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Arlene McCoy</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 1.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Grenade</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-1.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 2.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Gun</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-2.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Leslie Alexander</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 4.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Arrow</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-4.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 5.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Spear</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-5.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Jane Cooper</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 6.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Bazooka</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-6.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Courtney Henry</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="market__result tab3 d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 2.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Gun</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-2.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Leslie Alexander</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 1.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Grenade</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-1.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 4.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Arrow</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-4.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 3.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Sniper</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-3.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Arlene McCoy</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 6.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Bazooka</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-6.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Courtney Henry</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 5.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Spear</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-5.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Jane Cooper</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="market__result tab4 d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 4.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Arrow</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-4.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 5.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Spear</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-5.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Jane Cooper</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 6.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Bazooka</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-6.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Courtney Henry</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 1.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Grenade</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-1.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 2.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Gun</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-2.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Leslie Alexander</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 3.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Sniper</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-3.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Arlene McCoy</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="market__result tab5 d-flex justify-content-center">
+          <div class="row justify-content-center">
+
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 5.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Spear</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-5.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Jane Cooper</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 6.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Bazooka</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-6.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Courtney Henry</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 3.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Sniper</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-3.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Arlene McCoy</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 4.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Arrow</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-4.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 1.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Grenade</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-1.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Ralph Edwards</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+
+            <article
+              class="market__card m-2 col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-end align-items-center">
+              <div class="market__card-img">
+                <img src="./img/market/img 2.jpg" alt="">
+              </div>
+              <div class="market__card-bottom d-flex flex-column align-items-start">
+                <div class="market__card-text">
+                  <h3 class="market__card-title">Panda Gun</h3>
+
+                  <p class="market__card-price d-flex align-items-center"><span><img src="./img/market/etherium.png"
+                        alt=""></span> o.452.46</p>
+                </div>
+
+                <div class="market__card-author d-flex align-items-center">
+                  <div class="market__card-author-avatar">
+                    <img src="./img/market/author-2.png" alt="">
+                  </div>
+                  <p class="market__card-author-name">Leslie Alexander</p>
+                </div>
+
+                <button class="market__card-buy btn-primary align-self-center">Buy</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function search() {
+    const search = document.querySelector('.market__search')
+
+    search.classList.toggle('_active')
+    document.body.classList.toggle('_lock-scroll')
+  }
+
+</script>

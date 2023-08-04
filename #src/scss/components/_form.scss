@@ -1,0 +1,55 @@
+.form{
+  position: relative;
+
+  &__body{
+    @include adaptiv-value(padding-top, 60, 20, 1);
+  }
+
+  &__title{
+    @include adaptiv-value(padding-bottom, 56, 20, 1);
+    text-align: center;
+  }
+
+  &__main{  
+    @include adaptiv-value(gap, 16, 5, 1);
+    max-height: 65px;
+    @include adaptiv-value(margin-bottom, 32, 16, 1);
+
+    @media (max-width: 400px){
+      flex-direction: column;
+    }
+  }
+
+  & input{
+    border: 1px solid #FE8235;
+    color: #FE8235;
+    @include adaptiv-font(18, 12);
+    font-weight: 800;
+    letter-spacing: 2.7px;
+    max-width: 460px;
+    @include adaptiv-padding(24, 12, 32, 16, 1);
+    &::placeholder{
+      color: #FE8235;
+      text-transform: uppercase;
+    }
+  }
+
+  & button{
+    max-width: 156px;
+    min-height: auto;
+    @include adaptiv-padding(24, 12, 32, 16, 1);
+
+    @media (max-width: 400px){
+      max-width: 100%;
+    }
+  }
+
+  &__color-bg{
+    @include adaptiv-value(height, 300, 150, 1);
+    position: absolute;
+    width: 100%;
+    background-color: #7FFA8A;
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.partners{
+  background: #7FFA8A;
+
+  &__body{
+    @include adaptiv-padding(72, 20, 0, 0, 1);
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    @include adaptiv-value(row-gap, 25, 15, 1);
+    @include adaptiv-value(column-gap, 25, 15, 1);
+    img{
+      width: 100%;
+    }
+  }
+}

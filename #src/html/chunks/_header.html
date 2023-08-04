@@ -1,0 +1,66 @@
+<header class="header w-100 position-absolute top-0">
+  <div class="header__wrapper">
+    <div class="header__container _container container">
+      <div class="header__body">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary d-flex justify-content-between w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand header__logo" href="index.html"><img class="w-100" src="./img/header/logo.png"
+                alt=""> </a>
+
+            <div class="header__right d-flex d-lg-none">
+              <div class="header__actions d-flex">
+                <div class="header__search d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample"
+                  role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <input type="text" placeholder="Search..." class="header__search-input">
+                  <span class="header__icon icon-search"
+                    onclick="this.offsetParent.querySelector('input').classList.toggle('_active')"></span>
+                </div>
+
+                <a href="#" class="header__cart header__icon icon-cart"></a>
+              </div>
+              <button class="header__burger navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="collapse header__search-mob justify-content-center" id="collapseExample">
+              <input type="text" placeholder="Search..." class="header__search-input">
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" href="#">Discover</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Explore</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__actions d-none d-lg-flex align-items-center">
+              <div class="header__search d-flex align-items-center">
+                <input type="text" placeholder="Search..." class="header__search-input">
+                <span class="header__icon icon-search"
+                  onclick="this.offsetParent.querySelector('input').classList.toggle('_active')"></span>
+              </div>
+              <a href="#" class="header__cart header__icon icon-cart"></a>
+            </div>
+
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</header>

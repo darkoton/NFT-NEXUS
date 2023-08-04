@@ -1,0 +1,125 @@
+//< " ФАЙЛ СТИЛЕЙ ХЕДЕРА " >=============================================================================================================>//
+.header{
+  @include adaptiv-value(padding-top, 24, 10, 1);
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__body{
+    background:rgba(10, 10, 10, 0.7);
+    @include adaptiv-padding(20, 5, 32, 5, 1);
+  }
+
+  &__logo{
+    @include adaptiv-value(margin-right, 63, 10, 1);
+    @include adaptiv-value(width, 170, 130, 1);
+    transition: all 0.5s ease 0s;
+
+    &._active{
+      width: 0;
+    }
+  }
+  &__right{
+    @include adaptiv-value(column-gap, 20, 10, 1);
+  }
+
+  .navbar-collapse{
+    @include media-breakpoint-up(lg) { 
+      margin-right: 15px;
+     }
+  }
+
+  .navbar{
+    background: transparent !important;
+
+
+    .navbar-nav{
+      @include adaptiv-value(column-gap, 31, 10, 1);
+    }
+
+    .nav-link{
+      color: #939393;
+      @include adaptiv-font(15, 14);
+
+      @media (any-hover:hover){
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+
+    .nav-link.active{
+      color: #fff;
+      font-weight: 800;
+    }
+  }
+
+  &__actions{
+    @include adaptiv-value(column-gap, 32, 10, 1);
+    align-items: center;
+  }
+  &__search{
+    @include adaptiv-value(column-gap, 10, 5, 1);
+    &-input{
+      color: #fff;
+      @include adaptiv-font(16, 12);
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.5s ease 0s;
+      position: relative;
+      width: 0;
+      left: 100%;
+      opacity: 0;
+      
+      @media (max-width: 600px){
+        width: 100%;
+        opacity: 1;
+        align-self: center;
+        left: 0;
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        display: none;
+      }
+
+      &._active{
+        opacity: 1;
+        width: 135px;
+        left: 0;
+        @include adaptiv-padding(5, 3, 8, 3, 1);
+        border: 1px solid #ccc;
+        @include adaptiv-value-width(width, 275, 180, 992, 1);
+        
+        @media (max-width: 502px){
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  &__search-mob{
+    display: none;
+    width: 100%;
+    @media (max-width: 600px){
+      display: block;
+    }
+   input{
+    margin: 0 auto;
+    display: block;
+   }
+  }
+  &__icon{
+    @include adaptiv-font(32, 20);
+    color: #fff;
+    @media (any-hover:hover){
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    &:hover{
+      color: #FE8235;
+    }
+    }
+  }
+  &__burger{
+    @include adaptiv-padding(3.5, 1, 10.5, 5, 1);
+  }
+}
