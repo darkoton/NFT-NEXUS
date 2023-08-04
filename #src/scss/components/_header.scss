@@ -11,9 +11,14 @@
 
   &__logo{
     @include adaptiv-value(margin-right, 63, 10, 1);
-    @include adaptiv-value(width, 170, 130, 1);
+    @include adaptiv-value-width(width, 170, 130, 922, 1);
     transition: all 0.5s ease 0s;
 
+    @media (max-width: 992px){
+      img{
+        width: 100%;
+      }
+    }
     &._active{
       width: 0;
     }
@@ -33,7 +38,8 @@
 
 
     .navbar-nav{
-      @include adaptiv-value(column-gap, 31, 10, 1);
+      // @include adaptiv-value(column-gap, 31, 10, 1);
+      max-width: 456px;
     }
 
     .nav-link{
@@ -60,6 +66,7 @@
     align-items: center;
   }
   &__search{
+    position: relative;
     @include adaptiv-value(column-gap, 10, 5, 1);
     &-input{
       color: #fff;
@@ -88,7 +95,6 @@
         left: 0;
         @include adaptiv-padding(5, 3, 8, 3, 1);
         border: 1px solid #ccc;
-        @include adaptiv-value-width(width, 275, 180, 992, 1);
         
         @media (max-width: 502px){
           width: 100%;
